@@ -1,0 +1,39 @@
+p {
+  /* Safari, Opera, and Chrome */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+
+  /* Firefox */
+  display: -moz-box;
+  -moz-line-clamp: 2;
+  -moz-box-orient: vertical;
+
+  /* IE, Trident */
+  overflow: hidden;
+  height: 30px;
+}
+.triangle {
+  border-color: #00ff62 transparent;
+  border-style: solid solid solid solid;
+
+  /* 設定邊框大小可拼湊出任意形狀的三角形 */
+  border-width: 100px 100px 0px 0px;
+
+  /* 設定 width、height 可更好理解原理 */
+  height: 0px;
+  width: 0px;
+}
+@media screen and (min-width: 720px) {
+  .contain-table {
+    height: auto;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 720px) {
+  .contain-mobile {
+    height: auto;
+  }
+  .btn {
+    font-size: 0.5rem;
+  }
+}
